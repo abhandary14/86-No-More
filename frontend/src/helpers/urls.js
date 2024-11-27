@@ -1,4 +1,5 @@
-export const API_ROOT = 'http://localhost:8000/api/v1'
+// export const API_ROOT = 'http://localhost:8000/api/v1'
+export const API_ROOT = 'https://eight6-no-more.onrender.com/api/v1'
 
 export const APIURLS = {
     login: () => `${API_ROOT}/users/create-session`,
