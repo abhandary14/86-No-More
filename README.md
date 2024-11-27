@@ -17,13 +17,13 @@
 ![last commit](https://img.shields.io/github/last-commit/SE-Fall24-G73/86-No-More)
 ![Lines of code](https://tokei.rs/b1/github/SE-Fall24-G73/86-No-More)
 [![Repo-size](https://img.shields.io/github/repo-size/SE-Fall24-G73/86-No-More)](https://GitHub.com/SE-Fall24-G73/86-No-More/)
-[![file_count](https://img.shields.io/github/directory-file-count/SE-Fall24-G73/86-No-More/)](https://GitHub.com/SE-Fall24-G73/86-No-More/)
+[![file_count](https://img.shields.io/github/directory-file-count/SE-Fall24-G73/86-No-More)](https://GitHub.com/SE-Fall24-G73/86-No-More/)
 [![language_count](https://img.shields.io/github/languages/count/SE-Fall24-G73/86-No-More)](https://GitHub.com/SE-Fall24-G73/86-No-More/)
 [![Downloads](https://img.shields.io/github/downloads/SE-Fall24-G73/86-No-More/total)](https://GitHub.com/SE-Fall24-G73/86-No-More/)
 [![Top Language](https://img.shields.io/github/languages/top/SE-Fall24-G73/86-No-More)](https://GitHub.com/SE-Fall24-G73/86-No-More/)
 [![DOI](https://zenodo.org/badge/882011816.svg)](https://doi.org/10.5281/zenodo.14027435)
 [![Release](https://img.shields.io/github/v/release/SE-Fall24-G73/86-No-More)](https://gitHub.com/SE-Fall24-G73/86-No-More/)
-[![codecov](https://codecov.io/gh/SE-Fall24-G73/86-No-More/graph/badge.svg?token=V8M54MR7TH)](https://codecov.io/gh/SE-Fall24-G73/86-No-More)
+[![codecov](https://codecov.io/gh/abhandary14/86-No-More/graph/badge.svg?token=GHIF668Q70)](https://codecov.io/gh/abhandary14/86-No-More)
 
 <hr>
 
