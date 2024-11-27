@@ -31,6 +31,7 @@
 
 https://youtu.be/Ofqt7AOEkI0
 
+
 ## 💎 About:
 86-No-More is a culinary revolution that bids goodbye to the disappointment of unavailable menu items with the cutting-edge inventory tracker. It seamlessly anticipates ingredient shortages, empowering managers with insightful analytics, minimizing waste, and maximizing profits. With 86-No-More embrace innovation, eliminate shortages, and savor the taste of a more lucrative and long-lasting restaurant success!" This app allows you to:
 - Register and Log in to 86-no-more
