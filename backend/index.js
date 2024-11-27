@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const expressLayouts = require("express-ejs-layouts");
 
-const db = require("./config/mongoose");
+const connectDB = require("./config/mongoose");
 
 //Used for session cookie
 
@@ -18,12 +18,9 @@ const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
 
 const passportJWT = require("./config/passport-jwt-strategy");
+// Middleware
+app.use(cors());
 
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000/",
-  })
-);
 app.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
@@ -66,6 +63,14 @@ app.use(
   })
 );
 
+require("dotenv").config();
+const jwt = require("jsonwebtoken");
+
+const token = jwt.sign({ userId: "testUser123" }, process.env.JWT_SECRET, {
+  expiresIn: "1h",
+});
+console.log("Generated Token:", token);
+
 app.use(passport.initialize());
 
 app.use(passport.session());
@@ -73,13 +78,54 @@ app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
 
 //Use express router
-
+// app.use(
+//   cors({
+//     origin: process.env.FRONTEND_URL || "http://localhost:3000",
+//     credentials: true,
+//   })
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    credentials: true,
+  })
+);
 app.use("/", require("./routes"));
+app.use("/send", require("./routes/auth"));
 
-app.listen(port, function (err) {
-  if (err) {
-    console.log("Error", err);
+// app.listen(port, function (err) {
+//   if (err) {
+//     console.log("Error", err);
+//   }
+// app.use(
+//   cors({
+//     origin: process.env.FRONTEND_URL || "http://localhost:3000",
+//     credentials: true,
+//   })
+// );
+
+//   console.log("Server is running on", port);
+// });
+
+// app.use(
+//   cors({
+//     origin: process.env.FRONTEND_URL || "http://localhost:3000",
+//     credentials: true,
+//   })
+
+async function startServer() {
+  try {
+    await connectDB();
+    console.log("Connected to database :: MongoDB");
+
+    const server = app.listen(8000, () => {
+      console.log(`Server is running on port ${8000}`);
+    });
+
+    // Export the server for testing
+    module.exports = server;
+  } catch (error) {
+    console.error("Error starting server:", error);
   }
+}
 
-  console.log("Server is running on", port);
-});
+startServer();
