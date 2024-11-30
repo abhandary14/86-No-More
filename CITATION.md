@@ -10,7 +10,6 @@ Link to repository: https://github.com/SE-Fall24-G73/86-No-More/tree/master-fall
  - Aakash Bhandary (avbhanda@ncsu.edu)
  - Vaishvi Shah (vshah24@ncsu.edu)
 
-
 ## Original Authors:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5759097.svg)](https://doi.org/10.5281/zenodo.5759097)
 
